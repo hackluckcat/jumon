@@ -3,20 +3,23 @@ PATH
   specs:
     jumon (0.1.2)
       cli-ui (~> 2.2)
-      ruby-openai (~> 4.1)
+      ruby-openai (>= 4.1, < 8.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    base64 (0.2.0)
     cli-ui (2.2.3)
     diff-lcs (1.5.0)
-    faraday (2.7.8)
+    event_stream_parser (1.0.0)
+    faraday (2.8.1)
+      base64
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-multipart (1.0.4)
       multipart-post (~> 2)
     faraday-net_http (3.0.2)
-    multipart-post (2.3.0)
+    multipart-post (2.4.1)
     rake (13.0.6)
     rspec (3.12.0)
       rspec-core (~> 3.12.0)
@@ -31,7 +34,8 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-support (3.12.1)
-    ruby-openai (4.2.0)
+    ruby-openai (7.3.1)
+      event_stream_parser (>= 0.3.0, < 2.0.0)
       faraday (>= 1)
       faraday-multipart (>= 1)
     ruby2_keywords (0.0.5)
